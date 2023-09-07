@@ -1,5 +1,6 @@
 /* Enquanto eu não tenho arquivo nenhum, meu repositório
-vai acusar que eu não tenho nada mesmo. 
+   vai acusar que eu não tenho nada mesmo. 
+
 On branch master
 
 No commits yet
@@ -87,7 +88,10 @@ Changes to be committed:
  (-m) é para deixar uma mensagem salva nele, para quem ver esse doc
  saber se localizar quando entrar nele.
  
+ O resultado:
  
- 
+ [master (root-commit) 9d3f9e1] salvar arq
+ 1 file changed, 93 insertions(+)
+ create mode 100644 Readme.md
  
  
