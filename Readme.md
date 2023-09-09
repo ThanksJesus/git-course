@@ -1,97 +1,91 @@
-/* Enquanto eu não tenho arquivo nenhum, meu repositório
-   vai acusar que eu não tenho nada mesmo. 
-
-On branch master
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        Readme.md
-        pedro
-
-nothing added to commit but untracked files present (use "git add" to track) */
+Um repositório simples, para o entedimento de como começar a usar o git na sua máquina
+implementando a conexão SSH e a do seu repositório local para o GitHub .
 
 
+Instale o Git ( https://git-scm.com/downloads )
 
 
-Desse jeito aqui !!
+Crie um repositório :
 
-Então ele vai estar " Untracked " no caso, ele ainda não consegue ver
-o arquivo sendo localizado na pasta. Mesmo, ele já criado.
+git config --global user.name "qualquer_nome" 
 
+git config --global user.email "seu_email" 
 
-
-On branch master
-
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   Readme.md
-        
-        
-/* Agora ele já está add no git, e visto por ele, podendo ser
-a qualquer momento modificado */ 
+git config --global core.editor editor_que_você_usa 
 
 
+(leia os comandos_git.md)
 
-/* Agora, se eu alterar aqui no meu arquivo algo, para acrescentar ou tirar
-vai acusar lá no *Git Status* e para eu carregar essa atualização comigo
-, eu preciso digitar novamente o comando de add : 
-
-git add nome_do_arquivo */
+------------------------------------------------------------------
 
 
- Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   Readme.md
+Para fazer a config. SSH ( Conectar o Rep.local com o GitHub )
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   Readme.md
-        
-        
- git add Readme.md 
- 
- git status
- 
- On branch master
 
-No commits yet
+1- Abra Terminal.
 
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   Readme.md
-        
-        
- /* Ele volta ao normal, com a última atualização */
- 
- 
- Agora vamos commitar !
- 
- O que é commitar - é salvar o arquivo na fase que ele já está " pronto ".
- 
- 
- ok, vamo lá :
- 
- ( Se você alterou o documento, não esqueça de salvar as alterações )
- ( verifique no : git status )
- ( git add nome_do_arquivo )
- ( verifique de novo. )
- 
- Se estiver tudo ok, committe .
- 
- git commit -m "Salvar arq" 
- 
- (-m) é para deixar uma mensagem salva nele, para quem ver esse doc
- saber se localizar quando entrar nele.
- 
- O resultado:
- 
- [master (root-commit) 9d3f9e1] salvar arq
- 1 file changed, 93 insertions(+)
- create mode 100644 Readme.md
- 
+2- Cole o texto abaixo, substituindo o endereço de e-mail pelo seu GitHub.
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+Observação: se estiver usando um sistema herdado que não dá suporte ao algoritmo Ed25519, use:
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+
+Digite :
+
+
+ls
+
+cd nome_da_nova_pasta
+
+.
+
+/* Irá sugir duas pastas, uma com o nome: id_ssh  e a outra :id_ssh.pub */
+
+.
+
+
+Abra o arquivo, com :
+
+cat id_ssh.pub
+
+vi id_ssh.pub
+
+ou o seu editor de código ;
+
+.
+
+Copie a chave SSH . E vá para o seu GitHub.
+
+-----------------------------------------------------------------
+
+
+No GitHub :
+
+Vá em " Seetings "
+
+SSH and GPG keys 
+
+New SSH key
+
+No Title ( Coloque o for do agrado, ou o que ira ajudar na hora de saber qual é o seu rep. pessoal ou do trabalho )
+
+Na Key ( Cole a chave que você copiou do id_ssh.pub
+
+Depois clique em Add SSH key
+
+
+
+------------------------------------------------------------------
+
+
+Para fazer a conexão do Repo.local com o GitHub .:
+
+
+
+
+
+
  
