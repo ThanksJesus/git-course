@@ -288,3 +288,27 @@ Date:   Thu Sep 7 18:28:58 2023 -0300
 
 É bom usar ele, apenas quando nós ainda não jogamos esse git no repositório de uma nuvem
 ,para não causar confusão. 
+
+
+
+------------------------------------------------------------------
+
+
+" Ah, mas eu fiz uma alteração no meu arquivo, e quero subir para o github "
+
+" Mas quando eu faço todos os procedimentos, committo, mas não dá certo "
+
+Sim !!
+
+Porque você esqueceu de mandar pelo " push " para atualizar no repositório.
+
+Segue os comandos, para fazer isto .:
+
+git push origin master 
+
+
+
+" origin --> é uma default padrão "
+
+" master --> é um branch padrão tmb, que quando criamos um rep. já vem assim "
+
